@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CommerceDemo.Migrations
+namespace CommerceDemo.Data.Migrations
 {
     [DbContext(typeof(CommerceDemoContext))]
     partial class CommerceRazorDemoContextModelSnapshot : ModelSnapshot

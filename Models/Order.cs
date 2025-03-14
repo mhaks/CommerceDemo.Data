@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace CommerceDemo.Models
+namespace CommerceDemo.Data.Models
 {
     public class Order
     {

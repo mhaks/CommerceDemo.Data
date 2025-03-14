@@ -1,4 +1,4 @@
-﻿using CommerceDemo.Models;
+﻿using CommerceDemo.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,13 +11,13 @@ namespace CommerceDemo.Data
         {
         }
 
-        public DbSet<CommerceDemo.Models.Product> Product { get; set; } = default!;
-        public DbSet<CommerceDemo.Models.ProductCategory> ProductCategory { get; set; } = default!;        
-        public DbSet<CommerceDemo.Models.StateLocation> StateLocation { get; set; } = default!;
-        public DbSet<CommerceDemo.Models.Order> Order { get; set; } = default!;
-        public DbSet<CommerceDemo.Models.OrderProduct> OrderProduct { get; set; } = default!;
-        public DbSet<CommerceDemo.Models.OrderStatus> OrderStatus { get; set; } = default!;
-        public DbSet<CommerceDemo.Models.OrderHistory> OrderHistory { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.Product> Product { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.ProductCategory> ProductCategory { get; set; } = default!;        
+        public DbSet<CommerceDemo.Data.Models.StateLocation> StateLocation { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.Order> Order { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.OrderProduct> OrderProduct { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.OrderStatus> OrderStatus { get; set; } = default!;
+        public DbSet<CommerceDemo.Data.Models.OrderHistory> OrderHistory { get; set; } = default!;
 
         
 
@@ -25,7 +25,7 @@ namespace CommerceDemo.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<CommerceDemo.Models.OrderStatus>().ToTable("OrderStatus");
+            modelBuilder.Entity<CommerceDemo.Data.Models.OrderStatus>().ToTable("OrderStatus");
         }
     }
 }

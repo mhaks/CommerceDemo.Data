@@ -1,9 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using CommerceDemo.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace CommerceDemo.Models
+
+namespace CommerceDemo.Data.Models
 {
     
     public class OrderStatus
